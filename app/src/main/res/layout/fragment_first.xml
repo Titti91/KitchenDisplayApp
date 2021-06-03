@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_connected_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/connected_devices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDeviceAdress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/device_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_connected_devices" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:text="@string/connect_to_device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonIngredientsUp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="Rauf"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIngredientsDown"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRecipeBack"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonIngredientsDown"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="16dp"
+        android:text="Runter"
+        app:layout_constraintBottom_toTopOf="@+id/buttonScreensaver"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRecipeBack"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRecipeForward"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="32dp"
+        android:text="Vor"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIngredientsDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngredientsUp" />
+
+    <Button
+        android:id="@+id/buttonRecipeBack"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:text="Zurück"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIngredientsDown"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRecipeForward"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngredientsUp" />
+
+    <Button
+        android:id="@+id/buttonScreensaver"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:text="Bild wechseln"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
